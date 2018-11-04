@@ -11,7 +11,7 @@ class Solution {
         List<Character>[] bucket = new ArrayList[s.length()+1];    
         for (char k : s1.keySet()) {
             int v = s1.get(k);
-            if(bucket[v]==null){
+            if(bucket[v] == null){
                 bucket[v] = new ArrayList<>();
             } 
             bucket[v].add(k);
